@@ -5,9 +5,10 @@
 class cribl(
 String $group,
 String $user,
+Optional[String] $install_path = undef
 ) {
 
-  if defined('$install_path') and $::install_path =~ String {
+  if $install_path =~ String {
     class { 'cribl::install': }
   }
 
