@@ -12,7 +12,7 @@ Optional[String] $install_path = undef
     class { 'cribl::install': }
   }
 
-  if $facts['osfamily'] == 'RedHat' and $facts['os_maj_version '] == '6' {
+  if $facts['osfamily'] == 'RedHat' and $facts['os_maj_version'] == 6 {
     $provider = init
   } else {
     $provider = systemd
