@@ -14,6 +14,10 @@ Optional[String] $install_path = undef
 
   if $facts['osfamily'] == 'RedHat' and $facts['os_maj_version'] == 6 {
     $provider = init
+  } elsif $facts['osfamily'] == 'RedHat' {
+    $provider = redhat
+  } elsif $facts['osfamily'] == 'Debian' {
+    $provider = debian
   } else {
     $provider = systemd
   }
