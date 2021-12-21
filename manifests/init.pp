@@ -20,7 +20,7 @@ Optional[String] $install_path = undef
 
   service { 'cribl':
     ensure   => 'running',
-    provider => 'systemd'
+    provider => $provider
   }
 
 }
