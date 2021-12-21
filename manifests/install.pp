@@ -1,3 +1,6 @@
+# eventually isntall cribl package
+# for now just make sure the directory exists
+#
 class cribl::install
 {
 

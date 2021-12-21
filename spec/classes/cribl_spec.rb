@@ -12,7 +12,7 @@ describe 'cribl' do
     context "install on #{os}" do
       let(:params) do
         {
-          'install_path' => '/opt/'
+          'install_path' => '/opt/',
         }
       end
 
